@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Выбор пикселя</title>
+    <link type="text/css" href="../static/css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="box_1">
+    <div class="box_2">
+        <p><h1 align ="center" class="h_1"> Подсчёт пикселей на картинке </h1></p>
+        <div class="note_1">
+            {% with messages = get_flashed_messages() %}
+              {% if messages %}
+                <ul>
+                {% for message in messages %}
+                  <li>{{ message }}</li>
+                {% endfor %}
+                </ul>
+              {% endif %}
+            {% endwith %}
+         </div>
+        {% if filename %}
+            <div class="picture1">
+                <img src="{{ '../static/uploads/' + filename }}" width="300">
+            </div>
+        {% endif %}
+        <form method="post" action="/" enctype="multipart/form-data">
+            <div class="div_button_1">
+                <input type="file" name="file" class="button_1"  required>
+            </div>
+
+            <div class="div_button_2">
+                <input type="submit" value="Расчитать число пикселей" class="button_2">
+            </div>
+
+            <div class="block">
+               <div class="block_row">
+                    <div class="block_сolumn">
+                        <div class="block_item1"> Поле для ввода HAX-кода цвета пикселя: </div>
+                    </div>
+                    <div class="block_сolumn">
+                        <div class="block_item2">
+                            <input name="need_color" type="text" class="inp_1" value="{{ qqq1 }}" required/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block">
+               <div class="block_row">
+                    <div class="block_сolumn">
+                        <div class="block_item1"> Количество чёрных пикселей: </div>
+                    </div>
+                    <div class="block_сolumn">
+                        <div class="block_item2">
+                            <input name="black" type="text" value="{{ black }}" class="inp_2" readonly/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block">
+               <div class="block_row">
+                    <div class="block_сolumn">
+                        <div class="block_item1"> Количество белых пикселей: </div>
+                    </div>
+                    <div class="block_сolumn">
+                        <div class="block_item2">
+                            <input name="white" type="text" value="{{ white }}" class="inp_2" readonly/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block">
+               <div class="block_row">
+                    <div class="block_сolumn">
+                        <div class="block_item1"> Сравнение числа чёрных и белых пикселей: </div>
+                    </div>
+                    <div class="block_сolumn">
+                        <div class="block_item2">
+                            <input name="massage_1" type="text" value="{{ massage_1 }}" class="inp_2" readonly/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block">
+               <div class="block_row">
+                    <div class="block_сolumn">
+                        <div class="block_item1"> Количество пикселей указанного цвета: </div>
+                    </div>
+                    <div class="block_сolumn">
+                        <div class="block_item2">
+                           <input name="color" type="text" value="{{ color }}" class="inp_2" readonly/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="f1">
+        <p class="f2">Исполнитель задания: Понкратенко А.А.</p>
+        <p class="f2">Тел.: 8-956-164-47-84</p>
+        <p class="f2">e-mail: park-10@yandex.ru</p>
+    </div>
+</div>
+<script src="../static/js/app.js"></script>
+</body>
+</html>

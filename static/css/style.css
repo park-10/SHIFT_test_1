@@ -1,0 +1,150 @@
+*{
+ padding: 0;
+ margin: 0;
+ border: 0;
+}
+*,*:before,*:after{
+ -moz-box-sizing: border-box;
+ -webkit-box-sizing: border-box;
+ box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+ height: 100%;
+ width: 100%;
+ line-height: 1;
+ font-size: 14px;
+ -ms-text-size-adjust: 100%;
+ -moz-text-size-adjust: 100%;
+ -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+.body{
+    width: 800px;
+    background-color: #a5dcc9;
+    margin:0 auto;
+    height: 100vh;
+}
+
+.h_1{
+ color: #ffffff;
+ background-color: blue;
+ font-size: 30px;
+    padding: 10px;
+}
+
+.inp_1{
+ border: 3px solid #302e2e;
+    text-align: center;
+}
+
+.inp_2{
+ border: 3px solid #302e2e;
+    background-color: #c4bcbc;
+    text-align: center
+}
+
+.block_row{
+ display: flex;
+ border: 1px solid #302e2e;
+ justify-content: center;
+ align-items: center;
+}
+
+.block_сolumn{
+  color: #302e2e;
+    text-align: center;
+}
+
+.block_item1{
+ text-align: center;
+ width: 350px;
+}
+
+.block_item2{
+ text-align: center;
+ width: 200px;
+}
+
+.div_button_1{
+ text-align: center;
+}
+
+.button_1{
+    font-family: Sans-serif;
+    width: 300px;
+    font-size: 16px;
+    margin-left: 140px;
+  padding: 10px;
+}
+
+.div_button_2{
+ text-align: center;
+}
+
+.button_2{
+     font-family: Sans-serif;
+     font-size: 16px;
+     padding: 2px;
+     border: 1px solid #302e2e;
+     margin: 0px 10px 10px 10px;
+}
+
+.picture1{
+     text-align: center;
+}
+.note_1{
+    text-align: center;
+    background-color: #e49797;
+    padding: 4px;
+}
+
+.box_1{
+height:100vh;
+background: rgba(192, 166, 91, 0.53);
+border:1px solid #F0F0F0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.box_2{
+width:760px;
+height:800px;
+background:#8CC684;
+border:2px solid #1f1e1e;
+    text-align: center;
+}
+
+.f1{
+    font-family: Sans-serif;
+    border: 2px solid #1f1e1e;
+    background-color: #99b7e7;
+    width:760px;
+    text-align: center;
+    height: 50px;
+    padding: 15px;
+}
+
+.f2{
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
